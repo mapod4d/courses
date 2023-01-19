@@ -7,7 +7,7 @@
 1. ### Aver seguito la lezione registrata online: **"Etica e storia del FLOSS nel contesto del progetto MAPOD4D"**
     - ### [Link alla lezione](https://www.youtube.com/watch?v=KPBEh3WJLHg)
 2. ### Aver seguito la lezione **"FLOSS flusso di lavoro MAPOD4D"**
-    - ### [Link alla presentazione]
+    - ### [Link alla presentazione](https://github.com/mapod4d/courses/blob/master/it/001_floss_flusso_di_lavoro_mapod4d/001_floss_flusso_di_lavoro_mapod4d.pdf)
 3. ### Aver letto i seguenti documenti:
     - ### [Documento tecnico](https://github.com/mapod4d/docs/blob/master/it/c1/it_documento_tecnico_mapod4d.pdf)
     - ### [Linee guida](https://github.com/mapod4d/docs/blob/master/mapod4d_guidelines_lineeguida.pdf)
