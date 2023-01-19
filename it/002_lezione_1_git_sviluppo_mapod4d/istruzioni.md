@@ -1,4 +1,4 @@
-# **Lezione 1 git - sviluppo MAPOD4D**
+# **Lezione 1 - git - sviluppo MAPOD4D**
 
 <br />
 <br />
@@ -22,7 +22,7 @@
 ### Per chi utilizza il sistema operativo **GNU Linux** seguire le istruzioni della distribuzione in uso.
 ## **Editor di testo**
 ### Per tutti i sistemi operativi è possibile utilizzare il software preferito.
-### Un word preocessor (tipo LibreOffice write) non è adatto, occorre un software che sia esclusivamente un editor di testo.
+### Un word precessor (ad esempio LibreOffice writer) non è adatto, occorre un software che sia esclusivamente un editor di testo.
 ### Per chi non usa il sistema operativo **Microsoft Windows** e voglia un editor semplice consiglio **notepad++** [scaricabile qui](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4.8/npp.8.4.8.Installer.x64.exe), per installarlo potete vedere alla fine di questo documento le risposte da dare dopo aver lanciato il file scaricato.
 ### Ecco un breve elenco di altri editor di testo adatti alla scopo, richiedono esperienza e conoscenze specifiche:
 - [Brackets](https://github.com/brackets-cont/brackets/releases/download/v2.1.3/Brackets-2.1.3.exe)
