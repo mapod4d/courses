@@ -24,7 +24,8 @@
 ### Per tutti i sistemi operativi è possibile utilizzare il software preferito.
 ### Un word preocessor (tipo LibreOffice write) non è adatto, occorre un software che sia esclusivamente un editor di testo.
 ### Per chi non usa il sistema operativo **Microsoft Windows** e voglia un editor semplice consiglio **notepad++** [scaricabile qui](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4.8/npp.8.4.8.Installer.x64.exe), per installarlo potete vedere alla fine di questo documento le risposte da dare dopo aver lanciato il file scaricato.
-### Ecco un breve elenco di altri editor di testo adatti alla scopo, richiedono esperienza e conoscienze specifiche:
+### Ecco un breve elenco di altri editor di testo adatti alla scopo, richiedono esperienza e conoscenze specifiche:
+- [Brackets](https://github.com/brackets-cont/brackets/releases/download/v2.1.3/Brackets-2.1.3.exe)
 - [GVim](https://github.com/vim/vim-win32-installer/releases)
 - [Neovim](https://github.com/neovim/neovim/releases/download/stable/nvim-win64.zip)
 - [Scintilla](https://www.scintilla.org/wscite532.zip)
