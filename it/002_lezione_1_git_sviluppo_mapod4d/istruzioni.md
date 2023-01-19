@@ -5,7 +5,7 @@
 
 # Prerequisiti lezione
 1. ### Aver seguito la lezione registrata online: **"Etica e storia del FLOSS nel contesto del progetto MAPOD4D"**
-    - ### [Link alla lezione]
+    - ### [Link alla lezione](https://www.youtube.com/watch?v=KPBEh3WJLHg)
 2. ### Aver seguito la lezione **"FLOSS flusso di lavoro MAPOD4D"**
     - ### [Link alla presentazione]
 3. ### Aver letto i seguenti documenti:
@@ -36,10 +36,10 @@
 
 # Installazione notepad++
 ### Ecco quali risposte dare ai parametri d'installazione.
-![notepad++ passo 1](notp001.png)
-![notepad++ passo 2](notp002.png)
-![notepad++ passo 3](notp003.png)
-![notepad++ passo 4](notp004.png)
-![notepad++ passo 5](notp005.png)
-![notepad++ passo 6](notp006.png)
-![notepad++ passo 7](notp007.png)
+1. ![notepad++ passo 1](notp001.png)
+2. ![notepad++ passo 2](notp002.png)
+3. ![notepad++ passo 3](notp003.png)
+4. ![notepad++ passo 4](notp004.png)
+5. ![notepad++ passo 5](notp005.png)
+6. ![notepad++ passo 6](notp006.png)
+7. ![notepad++ passo 7](notp007.png)
