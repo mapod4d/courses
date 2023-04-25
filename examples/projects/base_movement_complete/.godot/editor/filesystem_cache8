@@ -1,0 +1,9 @@
+2a60927148abd1d33b818b535e306557
+::res://::1682443264
+character_body_3d.gd::GDScript::-1::1682443101::0::1::::<>CharacterBody3D<>::
+icon.svg::CompressedTexture2D::2009953320693326615::1681914926::1681914931::1::::<><>::
+mapod4d_base_movement.gd::GDScript::-1::1682439721::0::1::::<>Node3D<>::
+mapod4d_base_movement.tscn::PackedScene::1008863735209040552::1682443216::0::1::::<><>::res://character_body_3d.gd<>res://mapod4d_base_movement.gd
+::res://assets/::1682437570
+b_cylinder.gltf::PackedScene::8116673057889807548::1682437502::1682437570::1::::<><>::
+b_cylinder_nm.gltf::PackedScene::4525855668204695202::1682437533::1682437570::1::::<><>::

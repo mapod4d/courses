@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://bnuiqu2mb14gb"]
+
+[ext_resource type="Script" path="res://character_body_3d.gd" id="1_6g1jy"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8jkdn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h268f"]
+albedo_color = Color(0, 0, 0.627451, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1bvg1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ey4og"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x4mou"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pjqs0"]
+
+[sub_resource type="Sky" id="Sky_asj4w"]
+sky_material = SubResource("ProceduralSkyMaterial_pjqs0")
+
+[sub_resource type="Environment" id="Environment_joop7"]
+background_mode = 2
+sky = SubResource("Sky_asj4w")
+
+[node name="Collision" type="Node3D"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_6g1jy")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("SphereShape3D_8jkdn")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.95013)
+collision_mask = 0
+
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
+material = SubResource("StandardMaterial3D_h268f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_1bvg1")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.22836)
+collision_layer = 3
+collision_mask = 0
+
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D2"]
+material = SubResource("StandardMaterial3D_ey4og")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+shape = SubResource("BoxShape3D_x4mou")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67012, 1.14729, -1.15773)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.649249, 0, 0.760576, 0, 1, 0, -0.760576, 0, 0.649249, 2.84912, 0, 0)
+current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_joop7")
