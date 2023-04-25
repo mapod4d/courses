@@ -1,0 +1,87 @@
+[gd_scene load_steps=10 format=3 uid="uid://omx3rdn7c6uu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x8ajv"]
+size = Vector3(1, 0.5, 12)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dnlew"]
+albedo_color = Color(0.6, 0.6, 0.6, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8jkdn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q8ry8"]
+albedo_color = Color(0.639216, 0, 0.835294, 1)
+metallic = 0.37
+roughness = 0.2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x4mou"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ey4og"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pjqs0"]
+
+[sub_resource type="Sky" id="Sky_asj4w"]
+sky_material = SubResource("ProceduralSkyMaterial_pjqs0")
+
+[sub_resource type="Environment" id="Environment_joop7"]
+background_mode = 2
+sky = SubResource("Sky_asj4w")
+
+[node name="Mapod4dBaseMovement" type="Node3D"]
+
+[node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_x8ajv")
+metadata/_edit_lock_ = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Floor"]
+size = Vector3(1, 0.5, 12)
+material = SubResource("StandardMaterial3D_dnlew")
+metadata/_edit_lock_ = true
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.65401)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("SphereShape3D_8jkdn")
+metadata/_edit_lock_ = true
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CharacterBody3D"]
+material = SubResource("StandardMaterial3D_q8ry8")
+metadata/_edit_lock_ = true
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="BlackBox" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.89122)
+collision_layer = 3
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BlackBox"]
+shape = SubResource("BoxShape3D_x4mou")
+metadata/_edit_lock_ = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="BlackBox"]
+material = SubResource("StandardMaterial3D_ey4og")
+metadata/_edit_lock_ = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.67012, 1.14729, -0.15773)
+omni_range = 6.0
+metadata/_edit_lock_ = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.529919, 0.358401, -0.768593, 0, 0.906308, 0.422618, 0.848048, 0.223954, -0.48027, -4.596, 2.961, -6.606)
+current = true
+metadata/_edit_lock_ = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_joop7")

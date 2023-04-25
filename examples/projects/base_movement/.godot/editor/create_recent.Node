@@ -1,0 +1,8 @@
+Camera3D
+WorldEnvironment
+OmniLight3D
+CollisionShape3D
+CSGBox3D
+StaticBody3D
+CSGSphere3D
+CharacterBody3D
